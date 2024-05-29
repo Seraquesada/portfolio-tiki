@@ -1,25 +1,8 @@
-import Image from 'next/image'
-import jabiruAtardecer from '#/img/AtardecerjabirúSE.webp'
-import jabiruVertical from '#/img/JabiruverticalSE.webp'
-
 export default function Home() {
 	return (
 		<main className=" flex min-h-screen flex-col items-center justify-between p-24 ">
-			<div className="flex flex-col">
-				<Image
-					src={jabiruAtardecer}
-					alt="jabiruAtardecer"
-					width={undefined}
-					height={undefined}
-					placeholder="blur"
-				/>
-				<Image
-					src={jabiruVertical}
-					alt="jabiruVertical"
-					width={undefined}
-					height={undefined}
-					placeholder="blur"
-				/>
+			<div className="columns-1 gap-5 sm:columns-2 lg:columns-3 lg:gap-8 xl:columns-4 [&>img:not(:first-child)]:mt-5 lg:[&>img:not(:first-child)]:mt-8">
+				
 			</div>
 		</main>
 	)
