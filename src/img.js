@@ -1,15 +1,15 @@
-const imgs = [
+export const imgs = [
 	{
 		text: 'jabiru atardecer',
 		src: '/img/AtardecerjabirúSE.webp',
 	},
 	{
 		text: 'jabiru vertical',
-		src: '/img/Jabiruvertical.webp',
+		src: '/img/JabiruverticalSE.webp',
 	},
 	{
 		text: 'marcela sin edit',
-		src: '/img/Marcela(sinedicionfinal).webp',
+		src: '/img/Marcelasinedit.webp',
 	},
     {
 		text: 'marcela 2',
