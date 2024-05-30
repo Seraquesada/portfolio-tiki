@@ -1,8 +1,10 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {
-    images: {
-        formats: ['image/avif', 'image/webp'],
-    }
-};
+import withPlaiceholder from '@plaiceholder/next'
 
-export default nextConfig;
+const nextConfig = {
+	images: {
+		formats: ['image/avif', 'image/webp'],
+	}
+}
+
+export default withPlaiceholder(nextConfig)
