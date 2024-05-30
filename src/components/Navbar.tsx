@@ -18,7 +18,7 @@ const links = [
 const Navbar = () => {
 	return (
 		<nav className="px-24">
-			<h1>TIAGO ARANGUREN 8==D</h1>
+			<h1>TIAGO ARANGUREN 8=D</h1>
             <ul>
                 {links.map(l => 
                     (<li key={l.text}>
