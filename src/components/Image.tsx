@@ -4,14 +4,12 @@ import { getPlaiceholder } from 'plaiceholder'
 import fs from 'node:fs/promises'
 interface Props {
 	src: string
-	text: string
 	alt: string
 }
 
-const MyImage: FC<Props> = async ({ src, text, alt }) => {
-	const buffer = await fetch(src).then(async (res) => {
-		return Buffer.from(await res.arrayBuffer())
-	})
+const MyImage: FC<Props> = async ({ src, alt }) => {
+
+	const buffer = await fs.readFile(`./public${src}`)
 	const { base64 } = await getPlaiceholder(buffer)
 
 	return (
