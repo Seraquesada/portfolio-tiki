@@ -18,7 +18,7 @@ const links = [
 const Navbar = () => {
 	return (
 		<nav className="flex w-full items-end justify-between px-12 pt-12 md:px-24">
-			<h1 className="text-4xl font-bold">TIAGO ARANGUREN 8=D</h1>
+			<h1 className="text-4xl font-bold">TIAGO ARANGUREN </h1>
 			<ul className="flex gap-2 ">
 				{links.map((l) => (
 					<li key={l.text}>

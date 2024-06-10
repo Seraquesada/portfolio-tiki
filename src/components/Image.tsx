@@ -8,11 +8,13 @@ interface Props {
 }
 
 const MyImage: FC<Props> = async ({ src, alt }) => {
+
 	const buffer = await fs.readFile(`./public${src}`)
 	const { base64 } = await getPlaiceholder(buffer)
+
 	return (
 		<Image
-			className="h-auto w-auto"
+			className="h-auto w-auto animate-fade-in duration-2000"
 			src={src}
 			alt={alt}
 			width={500}
